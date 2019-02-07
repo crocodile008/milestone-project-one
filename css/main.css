@@ -1,0 +1,183 @@
+/*--------------------------------------------main/generic styles*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+.zero-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+
+.center-align-text {
+    text-align: center;
+}
+
+.image-fit {
+    height: 100%;
+    width: 100%;
+
+}
+
+.touch-image {
+    height:100%;
+    width:100%;
+}
+
+.touch-instructions-middle {
+    height: 50px;
+    width: 50px;
+    margin-left: 50vw;
+    margin-right:50vw;
+    margin-top: 10px;
+    position: absolute;
+
+}
+
+.touch-instructions-top {
+     height: 50px;
+    width: 50px;
+    margin-left: 10vw;
+    margin-top: 70px;
+    position: absolute;
+}
+.touch-instructions-bottom {
+     height: 50px;
+    width: 50px;
+    margin-left: 80vw;
+    margin-top: 10px;
+    position: absolute;
+}
+
+
+
+/*------------------------------------------------NAVIGATION SECTION8*/
+
+.navbar {
+    position: absolute;
+    width: 100vw;
+    z-index: 1;
+    background-color: white;
+    border: 0;
+}
+
+.navbar-right {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-size: 16px;
+    letter-spacing: 10px;
+}
+
+.discover-btn {
+    border: 0;
+    background-color: transparent;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 2px
+}
+
+.discover-btn:hover {
+    background-color: #f5f5f5;
+    color: #777;
+}
+
+
+/*---------------------------------------------------------MAIN HEADER SECTION*/
+
+.listen {
+    height: 100vh;
+    background-image: url(/assets/images/kol_hat.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+
+}
+
+.listen:hover {
+    opacity: 0.7;
+}
+
+
+
+.watch {
+    height: 100vh;
+
+
+    background-image: url(/assets/images/kol_cherry.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.watch:hover {
+    opacity: 0.7;
+}
+
+.tour {
+    height: 100vh;
+
+    background-image: url(/assets/images/kol_snake.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.tour:hover {
+    opacity: 0.7
+}
+
+.hover-hidden {
+    height: 100vh;
+}
+
+
+
+.hover-hidden .video-visible {
+    height: 50vh;
+    margin-top: 25vh;
+    visibility: hidden;
+
+}
+
+.hover-hidden:hover .video-visible {
+    visibility: visible;
+}
+
+
+
+/*-----------------------------------------------------------------FOOTER*/
+
+.footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+
+.sign-up-container {
+    height: 100px;
+    background-color: #F3F3F3;
+
+}
+
+.social-container {
+    height: 100px;
+    background-color: #EAFDFD;
+
+}
+
+/*-----------------------------------------------------------------MEDIA QUERIES*/
+
+@media only screen and (min-width:1025px) {
+    .touch-instructions {
+        visibility: hidden;
+
+    }
+}
