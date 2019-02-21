@@ -11,17 +11,49 @@ li {
     list-style: none;
 }
 
-audio {
- 
+audio {}
+
+
+
+.date {
+    width: 70px;
+    height: 70px;
+    background: #fcfcfc;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
+
+.date p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #9e9e9e;
+    
+}
+
+.date p span {
+    background: #d10000;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    border-top: 3px solid #a13838;
+    border-radius: 0 0 10px 10px;
+    padding: 6px 0 6px 0;
+    }
 
 .zero-margin-padding {
     margin: 0;
     padding: 0;
 }
 
-.center-align-text {
-    text-align: center;
+.center-align {
+    display:block;
+    margin:0 auto;
 }
 
 .image-fit {
@@ -31,48 +63,108 @@ audio {
 }
 
 .touch-image {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
 .touch-instructions-middle {
     height: 50px;
     width: 50px;
     margin-left: 50vw;
-    margin-right:50vw;
+    margin-right: 50vw;
     margin-top: 10px;
     position: absolute;
 
 }
 
 .touch-instructions-top {
-     height: 50px;
+    height: 50px;
     width: 50px;
     margin-left: 10vw;
     margin-top: 70px;
     position: absolute;
 }
+
 .touch-instructions-bottom {
-     height: 50px;
+    height: 50px;
     width: 50px;
     margin-left: 80vw;
     margin-top: 10px;
     position: absolute;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.audio-container {
+    width: 33.33%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.calendar-wrapper {
+    margin-top:40px;
+    margin-bottom:5px;
+}
+
+.sub-header {
+    width:100%;
+    background-color:white;
+}
+
+.sub-header-text {
+
+    font-size: 20px;
+    text-align: center;
+    color: #777;
+    letter-spacing: 10px;
+}
+
 /*...................................................Buttons*/
 
 .btn-center {
-    display:block;
-   margin:0 auto;
-   
+    display: block;
+    margin: 0 auto;
+
 }
 
 .btn-more {
-    width:100px;
-    height:50px;
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: lightblue;
+    border-color:lightblue;
+    border-radius:0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.btn-square {
+    border-radius:0;
 }
 
+.btn-more:hover {
+    
+    background-color: #79a9f7;
+    border-color:#79a9f7;
+}
+.btn-more:active:focus {
+    
+    background-color: #79a9f7;
+    border-color:#79a9f7;
+}
+.btn-more-two {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.btn-danger:hover {
+    background-color:grey;
+    border-color:grey;
+}
 
 
 /*------------------------------------------------NAVIGATION SECTION8*/
@@ -101,8 +193,8 @@ audio {
     background-color: transparent;
     text-align: center;
     color: #777;
-    font-size: 14px;
-    letter-spacing: 2px
+    font-size: 16px;
+    letter-spacing: 5px;
 }
 
 .discover-btn:hover {
@@ -110,11 +202,50 @@ audio {
     color: #777;
 }
 
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #777;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.open>.dropdown-toggle.btn-primary {
+    color: #777;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+.navbar-collapse {
+    margin-top:50px;
+  
+}
+
+.dropdown-menu {
+    width:300px;
+    
+}
+
+.dropdown-menu li {
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size:18px;
+    letter-spacing: 5px;
+    color:#777;
+}
+
+.navbar-default .navbar-nav>li>a {
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size:16px;
+    letter-spacing: 5px;
+    color:#777; 
+}
+
+
 
 /*---------------------------------------------------------MAIN HEADER SECTION*/
 
-.listen {
-    height: 100vh;
+.body {
+    height: 92vh;
     background-image: url(/assets/images/kol_hat.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -122,14 +253,14 @@ audio {
 
 }
 
-.listen:hover {
+.waste:hover {
     opacity: 0.7;
 }
 
 
 
-.watch {
-    height: 100vh;
+.cherry {
+    height: 92vh;
 
 
     background-image: url(/assets/images/kol_cherry.jpg);
@@ -138,12 +269,12 @@ audio {
     display: block;
 }
 
-.watch:hover {
+.cherry:hover {
     opacity: 0.7;
 }
 
-.tour {
-    height: 100vh;
+.snake {
+    height: 92vh;
 
     background-image: url(/assets/images/kol_snake.jpg);
     background-size: 100% 100%;
@@ -151,12 +282,15 @@ audio {
     display: block;
 }
 
-.tour:hover {
+.snake:hover {
     opacity: 0.7
 }
 
 .hover-hidden {
-    height: 100vh;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    
 }
 
 
@@ -164,77 +298,173 @@ audio {
 .video-visible {
     height: 60vh;
     margin-top: 20vh;
-    visibility: hidden;
+    background-color: rgba(3, 2, 0, 0.5);
+    width: 100%;
+    opacity:0;
+    transition:0.5s;
+    transition-timing-function: ease-in-out;
+    
 
+}
+
+.walls-video {
+
+    height: 80%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
 .hover-hidden:hover .video-visible {
-    visibility: visible;
+    opacity:1;
 }
 
-.audio-visible {
+.audio-visible-waste {
     height: 60vh;
     margin-top: 20vh;
-    background-color:rgba(0,100,90,0.5);
-    width:100%;
-    visibility: hidden;
+    background-color: rgba(3, 2, 0, 0.3);
+    width: 100%;
+    opacity:0;
+    transition:0.5s;
+    transition-timing-function: ease-in-out;
 
 }
 
-.hover-hidden:hover .audio-visible {
-    visibility: visible;
+.hover-hidden:hover .audio-visible-waste {
+    opacity:1;
 }
+
+
+
+
 
 .audio-section {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
-.audio-style {
-    
-    font-size:18px;
-    float:right;
-    color:white;
-    font-weight:800;
-}
 
-.audio-visible ul li {
-    padding-top:10%;
-}
+
+
 
 .audio-home-controls {
-       float:right;
-    width:300px;
-    height:50px;
-    margin-right:2%;
-    background-color:transparent;
+
+    width: 150px;
+    height: 100px;
+    display: block;
+    margin: auto;
+
+
+    background-color: transparent;
 }
 
+.audio-style-image-waste {
+    height: 80%;
+    width: 90%;
+    background-image: url(/assets/images/Kings-Of-Leon-Waste-A-Moment.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
 .single-cover {
-    height:70px;
-    width:70px;
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*--------------------------------------------------------------------VIDEO SECTION*/
+
+.walls-promo-header {
+    font-size: 24px;
+    background-color: rgba(3, 2, 0, 0.62);
+}
+
+
+.video-container {
+    width: 100%;
+    height: 50vh;
+
+}
+
+.watch-section {
+    height: 100%;
+    width: 100%;
+}
+
+.walls-video {
+
+    height: 80%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.hover-hidden:hover .video-visible {
+    opacity:1;
+}
+
+/*---------------------------------------------------------------TOUR*/
+
+.tour-header {
+    color: white;
+    margin-left: 10px;
+
+}
+
+
+.tour-dates {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.tour-visible {
+    height: 60vh;
+    margin-top: 20vh;
+    background-color: rgba(3, 2, 0, 0.5);
+    width: 100%;
+    opacity:0;
+    transition:0.5s;
+    transition-timing-function: ease-in-out;
+
+}
+
+.hover-hidden:hover .tour-visible {
+    opacity:1;
+}
+
+.container-tour {
+    width:90%;
+    margin:0 auto;
     
+    
+}
+
+.tour-location-text {
+    font-size:16px;
+    
+    color:white;
+    margin-bottom:10px;
+    letter-spacing: 5px;
 }
 
 /*-----------------------------------------------------------------FOOTER*/
-
 .footer {
-    margin-top: 0px;
-    margin-bottom: 0px;
-
+    height:50px;
 }
 
-
-.sign-up-container {
-    height: 100px;
-    background-color: #F3F3F3;
-
-}
-
-.social-container {
-    height: 100px;
-    background-color: #EAFDFD;
-
+.footer-container {
+    position:absolute;
+    width:100%;
 }
 
 /*-----------------------------------------------------------------MEDIA QUERIES*/
@@ -245,5 +475,3 @@ audio {
 
     }
 }
-
-
