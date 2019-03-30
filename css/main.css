@@ -13,7 +13,10 @@ li {
 
 audio {}
 
-
+.test {
+    height: 90vh;
+    background-color: blue;
+}
 
 .date {
     width: 70px;
@@ -123,6 +126,11 @@ audio {}
     letter-spacing: 10px;
 }
 
+h1 {
+    letter-spacing: 10px;
+    color: #777;
+}
+
 /*...................................................Buttons*/
 
 .btn-center {
@@ -140,6 +148,7 @@ audio {}
     border-radius: 0;
     text-align: center;
     letter-spacing: 5px;
+    text-decoration: none;
 }
 
 .btn-square {
@@ -150,7 +159,7 @@ audio {}
 
     background-color: #23527c;
     border-color: #777;
-    color:white;
+    color: white;
 }
 
 .btn-more:active:focus {
@@ -491,70 +500,371 @@ audio {}
     text-align: center;
     color: #777;
     letter-spacing: 5px;
-    
+
 }
 
 input[type=email] {
-   width: 70%;
-   text-align: center;
-  background-color:lightblue;
+    width: 70%;
+    text-align: center;
+    background-color: lightblue;
 }
 
 .social-media-section {
-    padding:0px;
-    margin-top:20px;
-    
-    float:right;
+    padding: 0px;
+    margin-top: 20px;
+
+    float: right;
 }
 
 .twitter-box {
-    
-   
-    height:60px;
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-size:30px;
+
+
+
+    text-align: center;
+    font-size: 30px;
 }
 
 .facebook-box {
-    
-    
-    height:60px;
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-size:30px;
+
+
+
+    text-align: center;
+    font-size: 30px;
 }
 
 .youtube-box {
-    
- 
-    height:60px;
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-size:30px;
-    
+
+
+
+    text-align: center;
+    font-size: 30px;
+
 }
 
 .instagram-box {
-    
-    height:60px;
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-size:30px;
-    
+
+
+    text-align: center;
+    font-size: 30px;
+
 }
 
 .fab {
-    color:lightblue;
+    color: lightblue;
 }
 
 .fab:hover {
     text-decoration: none;
-    
+
+}
+
+/*------------------------------------------------------------------DISCOVER PAGE */
+
+.background-discover {
+    height: 90vh;
+    background-image: url(/assets/images/kol_eyelash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
+.carousel-wrapper {
+    height: 90vh;
+    position: relative;
+
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.carousel {
+    height: 80vh;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+
+.container-carousel {
+    margin: 0 auto;
+    float: none;
+    width: 90vw;
+}
+
+
+/*------------------------------------------------------------------LISTEN PAGE*/
+
+.background-listen {
+    height: 90vh;
+    background-image: url(/assets/images/kol_skull.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.album-container {
+    height: 33vh;
+
+    margin-top: 100px;
+    opacity: 0.5;
+
+}
+
+.album-container:hover {
+
+    opacity: 1;
+
+}
+
+.album-wrapper-2 {
+    height: 33vh;
+    margin-top: 60px;
+}
+
+.album-container-2 {
+    height: 33vh;
+
+    margin-top: 60px;
+    opacity: 0.5;
+
+
+}
+
+.album-container-2:hover {
+
+    opacity: 1;
+
+}
+
+.album-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid white;
+}
+
+.album-image:hover {
+    border-color: lightblue;
+}
+
+.row-center {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.row-album-align {
+    margin-left: 50px;
+}
+
+.col-center {
+    display: inline-block;
+    float: none;
+
+
+}
+
+.album-hidden-md {
+    display: none;
+}
+
+.container-carousel-visible {
+
+    margin: 0 auto;
+    float: none;
+    width: 90vw;
+    display: block;
+
+}
+
+.audio-listen-controls {
+    text-align: center;
+    height: 14px;
+    width: 80px;
+    margin-top: 0;
+
+
+}
+
+.track-listing {
+    font-size: 16px;
+    letter-spacing: 10px;
+    margin-top: 20px;
+}
+
+.walls-track-listing-modal {
+    background-image: url(/assets/images/kol_candle.jpg);
+
+    background-size: 100% 100%;
+    font-size: 20px;
+    color: #777;
+    letter-spacing: 5px;
+}
+
+.youth-track-listing-modal {
+    background-image: url(/assets/images/youth-and-young-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1vw ;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width:60vw;
+}
+
+
+
+.aha-track-listing-modal {
+    background-image: url(/assets/images/aha-shake-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1vw;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width:60vw;
+
+}
+
+.because-track-listing-modal {
+    background-image: url(/assets/images/because-of-the-times-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1vw;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width:60vw;
+
+}
+
+.obtn-track-listing-modal {
+    background-image: url(/assets/images/only-by-the-night-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1vw;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width:60vw;
+
+
+}
+
+.obtn-spacing {
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.come-around-track-listing-modal {
+    background-image: url(/assets/images/come-around-sundown-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 1vw;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width:60vw;
+
+
+}
+
+.come-around-track-style {
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: white;
+}
+
+.mechanical-bull-track-listing-modal {
+    background-image: url(/assets/images/mechanical-bull-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+.modal-album-small {
+    height:100px;
+    width:100px;
+}
+
+.audio-small-controls {
+    height:50px;
+    width:100px;
+}
+
+.small-track-listing {
+    margin-top:20%;
+}
+
+.mechanical-bull-track-style {
+    color: white;
+    margin-top: 52vh;
+    margin-right: 25px;
+    font-size: .9vw;
+}
+
+.walls-track-listing-modal {
+    background-image: url(/assets/images/WALLS-reverse-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 5px;
+    font-weight: 900;
+    height: 80vh;
+    width:60vw;
+}
+
+.walls-track-style {
+       float: left;
+    margin-left: auto;
+    margin-top: 30px;
+    font-size: 1.5vh;
+}
+
+/*--TRACK LINKS--*/
+
+.mechanical-bull-link {
+    color:red;
+}
+
+.sundown-link {
+    color: orange;
+}
+
+.walls-link {
+    color:lightblue;
+}
+
+.obtn-link {
+    color:red;
 }
 
 /*-----------------------------------------------------------------MEDIA QUERIES*/
@@ -568,7 +878,41 @@ input[type=email] {
 
 @media only screen and (min-width:1200px) {
     .social-media-section {
-        margin-top:0px;
-        padding-top:0px;
+        margin-top: 0px;
+        padding-top: 0px;
     }
 }
+
+@media only screen and (min-width:1025px) {
+    .container-carousel {
+        margin: 0 auto;
+        float: none;
+        width: 50vw;
+
+    }
+}
+
+@media only screen and (min-width:1235px) {
+    .album-hidden-md {
+        display: block;
+
+    }
+}
+
+@media only screen and (min-width:1236px) {
+    .container-carousel-visible {
+        display: none;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: 0;
+        left: 0;
+
+    }
+}
+
+/*-------------------------------------------------------MODAL*/
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: 0;
