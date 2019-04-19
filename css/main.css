@@ -131,6 +131,10 @@ h1 {
     color: #777;
 }
 
+.center-item {
+    text-align: center;
+}
+
 /*...................................................Buttons*/
 
 .btn-center {
@@ -140,15 +144,33 @@ h1 {
 }
 
 .btn-more {
-    width: 100px;
-    height: 40px;
-    margin-top: 10px;
-    background-color: lightblue;
-    border-color: #777;
+    width: 33vw;
+    height: 50%;
+    background-color: transparent;
+    border-color: pink;
     border-radius: 0;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     text-decoration: none;
+    margin-left: 33vw;
+    font-size: 4.5vw;
+    color:#777;
+    font-weight: 900
+}
+
+.btn-more-2 {
+    width: 33vw;
+    height: 50%;
+    background-color: transparent;
+    border-color: lightblue;
+    border-radius: 0;
+    text-align: center;
+    letter-spacing: 10px;
+    text-decoration: none;
+    margin-left: 33vw;
+    font-size: 4.5vw;
+    color:#777;
+    font-weight: 900
 }
 
 .btn-square {
@@ -157,7 +179,14 @@ h1 {
 
 .btn-more:hover {
 
-    background-color: #23527c;
+    background-color: pink;
+    border-color: #777;
+    color: white;
+}
+
+.btn-more-2:hover {
+
+    background-color: lightblue;
     border-color: #777;
     color: white;
 }
@@ -178,6 +207,37 @@ h1 {
     background-color: grey;
     border-color: grey;
 }
+
+.video-button {
+    width: 100%;
+    height: 20vh;
+    background-image: url(/assets/images/sex-on-fire-cd.jpg);
+    background-size: 100% 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: inline-block;
+
+}
+
+.video-button-2 {
+    width: 100%;
+    height: 20vh;
+    background-image: url(/assets/images/use-somebody-cd.jpg);
+    background-size: 100% 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.video-button-3 {
+    width: 100%;
+    height: 20vh;
+    background-image: url(/assets/images/supersoaker-cd.jpg);
+    background-size: 100% 100%;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
 
 
 /*------------------------------------------------NAVIGATION SECTION8*/
@@ -278,11 +338,10 @@ h1 {
     background-repeat: no-repeat;
     display: block;
 
+
 }
 
-.waste:hover {
-    opacity: 0.7;
-}
+.body:hover {}
 
 
 
@@ -296,9 +355,7 @@ h1 {
     display: block;
 }
 
-.cherry:hover {
-    opacity: 0.7;
-}
+.cherry:hover {}
 
 .snake {
     height: 92vh;
@@ -309,9 +366,7 @@ h1 {
     display: block;
 }
 
-.snake:hover {
-    opacity: 0.7
-}
+.snake:hover {}
 
 .hover-hidden {
     height: 90vh;
@@ -405,6 +460,11 @@ h1 {
 
 }
 
+.button-position {
+    height: 20vh;
+    margin-top: 75vh;
+}
+
 /*--------------------------------------------------------------------VIDEO SECTION*/
 
 .walls-promo-header {
@@ -435,6 +495,8 @@ h1 {
 .hover-hidden:hover .video-visible {
     opacity: 1;
 }
+
+
 
 /*---------------------------------------------------------------TOUR*/
 
@@ -484,6 +546,8 @@ h1 {
     letter-spacing: 5px;
 }
 
+
+
 /*-----------------------------------------------------------------FOOTER*/
 
 .footer {
@@ -491,8 +555,9 @@ h1 {
 }
 
 .footer-container {
-    position: absolute;
+    position: relative;
     width: 100%;
+    background-color: white;
 }
 
 .sign-up-text {
@@ -562,9 +627,7 @@ input[type=email] {
 
 .background-discover {
     height: 90vh;
-    background-image: url(/assets/images/kol_eyelash.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #f8f8ff;
 
 
 }
@@ -610,45 +673,41 @@ input[type=email] {
 
 .background-listen {
     height: 90vh;
-    background-image: url(/assets/images/kol_skull.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: #f8f8ff;
 
+}
+
+.listen-header {
+    margin-top: 80px;
+    text-align: left;
+    color: #777;
 }
 
 .album-container {
     height: 33vh;
 
-    margin-top: 100px;
-    opacity: 0.5;
+    margin-top: 20px;
+
 
 }
 
-.album-container:hover {
 
-    opacity: 1;
-
-}
 
 .album-wrapper-2 {
     height: 33vh;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .album-container-2 {
     height: 33vh;
 
-    margin-top: 60px;
-    opacity: 0.5;
+    margin-top: 20px;
 
 
-}
-
-.album-container-2:hover {
-
-    opacity: 1;
 
 }
+
+
 
 .album-image {
     height: 100%;
@@ -720,12 +779,12 @@ input[type=email] {
     background-image: url(/assets/images/youth-and-young-reverse-blank.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    font-size: 1vw ;
+    font-size: 1vw;
     color: #777;
     letter-spacing: 5px;
     font-weight: 900;
     height: 80vh;
-    width:60vw;
+    width: 60vw;
 }
 
 
@@ -739,7 +798,7 @@ input[type=email] {
     letter-spacing: 5px;
     font-weight: 900;
     height: 80vh;
-    width:60vw;
+    width: 60vw;
 
 }
 
@@ -752,7 +811,7 @@ input[type=email] {
     letter-spacing: 5px;
     font-weight: 900;
     height: 80vh;
-    width:60vw;
+    width: 60vw;
 
 }
 
@@ -765,7 +824,7 @@ input[type=email] {
     letter-spacing: 5px;
     font-weight: 900;
     height: 80vh;
-    width:60vw;
+    width: 60vw;
 
 
 }
@@ -784,7 +843,7 @@ input[type=email] {
     letter-spacing: 5px;
     font-weight: 900;
     height: 80vh;
-    width:60vw;
+    width: 60vw;
 
 
 }
@@ -810,17 +869,17 @@ input[type=email] {
 }
 
 .modal-album-small {
-    height:100px;
-    width:100px;
+    height: 100px;
+    width: 100px;
 }
 
 .audio-small-controls {
-    height:50px;
-    width:100px;
+    height: 50px;
+    width: 100px;
 }
 
 .small-track-listing {
-    margin-top:20%;
+    margin-top: 20%;
 }
 
 .mechanical-bull-track-style {
@@ -839,11 +898,11 @@ input[type=email] {
     letter-spacing: 5px;
     font-weight: 900;
     height: 80vh;
-    width:60vw;
+    width: 60vw;
 }
 
 .walls-track-style {
-       float: left;
+    float: left;
     margin-left: auto;
     margin-top: 30px;
     font-size: 1.5vh;
@@ -852,7 +911,7 @@ input[type=email] {
 /*--TRACK LINKS--*/
 
 .mechanical-bull-link {
-    color:red;
+    color: red;
 }
 
 .sundown-link {
@@ -860,11 +919,160 @@ input[type=email] {
 }
 
 .walls-link {
-    color:lightblue;
+    color: lightblue;
 }
 
 .obtn-link {
-    color:red;
+    color: red;
+}
+
+/*------------------------------------------------------------------WATCH PAGE*/
+
+.background-watch {
+    height: 90vh;
+    background-color: #f8f8ff;
+
+
+}
+
+
+#sex-on-fire-button {
+
+    width: 20vw;
+    background-image: url(/assets/images/sex-on-fire-cd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 20vh;
+    margin-top: 100px;
+    margin-left: 50px;
+
+
+}
+
+#sex-on-fire-right {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    position: absolute;
+    height: 90vh;
+}
+
+#sex-on-fire-right-iframe {
+
+    width: 100%;
+    height: 100%;
+}
+
+#use-somebody-button {
+
+    width: 20vw;
+    background-image: url(/assets/images/use-somebody-cd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 20vh;
+    margin-top: 5vh;
+    margin-left: 50px;
+
+
+}
+
+#use-somebody-right {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    position: absolute;
+    height: 90vh;
+}
+
+#use-somebody-right-iframe {
+
+    width: 100%;
+    height: 100%;
+}
+
+#supersoaker-button {
+
+    width: 20vw;
+    background-image: url(/assets/images/supersoaker-cd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 20vh;
+    margin-top: 5vh;
+    margin-left: 50px;
+
+
+
+}
+
+#supersoaker-right {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+    height: 90vh;
+    position: absolute;
+}
+
+#supersoaker-right-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.container-watch-button {
+    margin-left: 10px;
+}
+
+
+
+
+/*------------------------------------------------------------------TOUR PAGE*/
+
+.background-wrapper {
+    height: 100%;
+}
+
+.background-tour {
+    height: 100%;
+    background-color: #f8f8ff;
+
+}
+
+.tour-block {
+    height: 20vh;
+    width: 100%;
+    background: rgba(255, 192, 203, 0.5);
+
+    margin-top: 20px;
+}
+
+.center-align-date {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.tour-promo {
+    height: 50vh;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tour-date {
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 1000;
+    letter-spacing: 5px
+}
+
+.tour-location {
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 5px;
+}
+
+.tour-header {
+    margin-top: 80px;
+    text-align: right;
+    color: #777
 }
 
 /*-----------------------------------------------------------------MEDIA QUERIES*/
@@ -899,7 +1107,7 @@ input[type=email] {
     }
 }
 
-@media only screen and (min-width:1236px) {
+@media only screen and (min-width:1200px) {
     .container-carousel-visible {
         display: none;
         position: absolute;
@@ -911,8 +1119,77 @@ input[type=email] {
     }
 }
 
+@media only screen and (min-width:1200px) {
+    .btn-more {
+        width: 11vw;
+        height: 50%;
+        background-color: transparent;
+        border-color: pink;
+        border-radius: 0;
+        text-align: center;
+        letter-spacing: 10px;
+        text-decoration: none;
+        margin-left: 11vw;
+        font-size: 1.7vw;
+        color:#777;
+        font-weight: 900
+    }
+}
+@media only screen and (min-width:1200px) {
+.btn-more-2 {
+    width: 11vw;
+    height: 50%;
+    background-color: transparent;
+    border-color: lightblue;
+    border-radius: 0;
+    text-align: center;
+    letter-spacing: 10px;
+    text-decoration: none;
+    margin-left: 11vw;
+    font-size: 1.7vw;
+    color:#777;
+    font-weight: 900
+}
+}
+
+@media only screen and (min-width:1200px) {
+    .tour-date {
+        text-align: center;
+        font-size: 5vh;
+        font-weight: 1000;
+        letter-spacing: 10px
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .tour-promo {
+        height: 65vh;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (min-width:1200px) {
+.tour-location {
+    text-align: center;
+    font-size: 2.5vh;
+    letter-spacing: 5px;
+}
+}
+
+/**@media only screen and (min-width:992px) {
+    .background-tour {
+         height: 92vh;
+    
+   
+    }
+
+    }
+**/
+
 /*-------------------------------------------------------MODAL*/
 
 .modal-backdrop.in {
     filter: alpha(opacity=50);
     opacity: 0;
+}
